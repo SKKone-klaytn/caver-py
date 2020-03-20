@@ -27,6 +27,7 @@ def createKey(entropy) :
     "private_key" : key,
     "address" : key.public_key.to_checksum_address()
   }
+
 def parsePrivateKey(key_bytes) :
   if isinstance(key_bytes, keys.PrivateKey):
     return key_bytes
